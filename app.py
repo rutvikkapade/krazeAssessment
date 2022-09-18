@@ -1,3 +1,10 @@
+
+
+
+# assumptions that i have made about the input file if the file is empty,
+# there will be no output file genrated. if input file has invalid city 
+# names ,the output file will say invalid city name for that respective city.
+
 from flask import Flask, request
 from flask import render_template
 from werkzeug.utils import secure_filename
@@ -10,6 +17,7 @@ app=Flask(__name__)
 def home():
     return render_template('index.html')
 
+#api route for uploading the input file
 @app.route("/file",methods=['POST'])
 def upload_file():
     if request.method=='POST':
