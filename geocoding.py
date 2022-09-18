@@ -2,7 +2,10 @@ import requests
 from functools import cache
 import os
 
+#enter your API key here
 API_KEY=''
+
+#enter your API url here
 API_URL=''
 
 
