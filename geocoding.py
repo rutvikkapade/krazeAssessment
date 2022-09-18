@@ -2,8 +2,8 @@ import requests
 from functools import cache
 import os
 
-API_KEY='AIzaSyAVddq24VUnrb2u8uM44FQQppHsQHx1OZA'
-API_URL='https://maps.googleapis.com/maps/api/geocode/json?address='
+API_KEY=''
+API_URL=''
 
 def compute():
     line=read_file('input.txt')
